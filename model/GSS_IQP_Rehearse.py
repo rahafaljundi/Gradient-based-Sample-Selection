@@ -339,8 +339,7 @@ class Net(nn.Module):
 
             # select samples that minimize the feasible region
             inds = cosine_similarity_selector_IQP_Exact(self.mem_grads, nb_selected=self.n_sampled_memories,
-                                                        solver=self.solver, age=self.sampled_memory_age,
-                                                        age_weight=self.age_weight)
+                                                        solver=self.solver, age=self.sampled_memory_age)
 
             print("number of retained memories", torch.nonzero(torch.ge(inds, from_buffer_size)).size(0))
             self.print_loss(self.sampled_memory_data[inds[torch.ge(inds, from_buffer_size)]],

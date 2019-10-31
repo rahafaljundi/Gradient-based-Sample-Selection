@@ -2,10 +2,9 @@
 
 Code for paper:
 Gradient based sample selection for online continual learning
-Rahaf Aljundi, Min Lin, Baptiste Goujaud, Yoshua Bengio
+Rahaf Aljundi, Min Lin, Baptiste Goujaud, Yoshua Bengio. 
 Neurips 2019
 
-A demo and instructions on running the code will be added soon.
 ## (key) Requirements 
 
 - Python 3.6
@@ -19,5 +18,7 @@ for GSS_IQP, please install MIXEDIP package: https://github.com/oxfordcontrol/mi
 
 Demo:
 For disjoint MNIST please run ./Disjoint_Mnist.sh
+For permuted MNIST please run ./Permuted_Mnist.sh
+For disjoint CIFAR-10 please run ./Cifar_10.sh
 
 

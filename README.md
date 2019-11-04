@@ -15,10 +15,18 @@ or
 `conda install --file requirements.txt`
 
 for GSS_IQP, please install MIXEDIP package: https://github.com/oxfordcontrol/miosqp following their README file.
+Note that for this you need to install quadprog and osqp
+
+---- conda install quadprog
+
+---- conda install -c conda-forge/label/gcc7 osqp  %% if it doesn't work check this https://anaconda.org/conda-forge/osqp
 
 Demo:
+
 For disjoint MNIST please run ./Disjoint_Mnist.sh
+
 For permuted MNIST please run ./Permuted_Mnist.sh
+
 For disjoint CIFAR-10 please run ./Cifar_10.sh
 
 

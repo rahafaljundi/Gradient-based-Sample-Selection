@@ -21,8 +21,8 @@ $MY_PYTHON cifar10.py \
 
 cd ..
 
-nb_seeds=3
-seed=1
+nb_seeds=2
+seed=0
 while [ $seed -le $nb_seeds ]
 do
 
@@ -41,7 +41,7 @@ do
 
 	echo "***********************GSS_Clust***********************"
 
-	$MY_PYTHON main.py $CIFAR_10i --model GSS_Clust --lr 0.01  --n_memories 100 --n_sampled_memories 1000  --n_constraints 10 --memory_strength 0  --n_iter 3 --slack 0 --change_th 0.0 --repass 0 --eval_memory yes --normalize  no --seed $seed --subselect 1 --age 0.01
+	#$MY_PYTHON main.py $CIFAR_10i --model GSS_Clust --lr 0.01  --n_memories 100 --n_sampled_memories 1000  --n_constraints 10 --memory_strength 0  --n_iter 3 --slack 0 --change_th 0.0 --repass 0 --eval_memory yes --normalize  no --seed $seed --subselect 1 --age 0.01
 
 
 	echo "***********************FSS_Clust***********************"

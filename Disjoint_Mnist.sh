@@ -21,8 +21,9 @@ $MY_PYTHON mnist_split.py \
 cd ..
 
 
-nb_seeds=3
-seed=1
+
+nb_seeds=2
+seed=0
 while [ $seed -le $nb_seeds ]
 do
 	echo $seed

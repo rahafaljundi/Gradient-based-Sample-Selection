@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 results="./results/permuted_Mnist/"
-MNIST_PERM="--n_layers 2 --n_hiddens 100 --data_path ./data/ --save_path $results --batch_size 10 --log_every 10 --samples_per_task 1000 --data_file mnist_permutations.pt --cuda no  --seed $seed --tasks_to_preserve 10"
+MNIST_PERM="--n_layers 2 --n_hiddens 100 --data_path ./data/ --save_path $results --batch_size 10 --log_every 10 --samples_per_task 1000 --data_file mnist_permutations.pt --cuda no  --tasks_to_preserve 10"
 
 mkdir $results
 
@@ -22,8 +22,8 @@ $MY_PYTHON mnist_permutations.py \
 
 cd ..
 
-nb_seeds=3
-seed=1
+nb_seeds=2
+seed=0
 while [ $seed -le $nb_seeds ]
 do
 

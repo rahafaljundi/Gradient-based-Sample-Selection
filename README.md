@@ -7,7 +7,7 @@ Neurips 2019
 
 ## (key) Requirements 
 
-- Python 3.6
+- Python 2.8 or more.
 - Pytorch 1.1.0
 
 `pip install -r requirements.txt`

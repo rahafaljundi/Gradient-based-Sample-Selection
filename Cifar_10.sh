@@ -53,7 +53,7 @@ do
 
 
 	echo "***********************GSS_Greedy***********************"
-	$MY_PYTHON main.py $CIFAR_10i --model Gradient_rehearsal++ --lr 0.01  --n_memories 10 --n_sampled_memories 1000 --n_constraints 10 --memory_strength 10  --n_iter 10   --change_th 0. --seed $seed  --subselect 1
+	$MY_PYTHON main.py $CIFAR_10i --model GSS_Greedy  --lr 0.01  --n_memories 10 --n_sampled_memories 1000 --n_constraints 10 --memory_strength 10  --n_iter 10   --change_th 0. --seed $seed  --subselect 1
 
 	((seed++))
 done
